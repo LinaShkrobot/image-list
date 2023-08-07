@@ -1,0 +1,55 @@
+body {
+    display: flex;
+    font-family: Titillium Web, sans-serif
+}
+
+.main_sidebar {
+    margin-left: 40px;
+    margin-top: 40px;
+    margin-right: 200px;
+}
+
+.sidebar_title {
+    font-size: 30px;
+}
+
+.list_item {
+    line-height: 40px;
+    list-style-type: none;
+    font-size: 18px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.form {
+    margin-left: 400px;
+    background-color: gray;
+    height: 150px;
+    width: 420px;
+    margin-bottom: 80px;
+}
+
+.form_text {
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+.form_download {
+    margin-left: 50px;   
+}
+
+.form_file {
+    margin-top: 50px;
+    margin-left: 40px;
+}
+
+.imageDisplay {
+    max-width: 300px;
+    max-height: 300px; 
+}
+
+
