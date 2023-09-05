@@ -1,15 +1,17 @@
-const state = {
-  images: {},
-};
+import { List } from './components/list';
+import { MainImage } from './components/mainImage';
+import { UploadForm } from './components/uploadForm';
+import { DownloadForm } from './components/downloadForm';
+import { Api } from './api';
 
-(function () {
-  const listNode = document.querySelector('.sidebar_list');
-  const imageNode = document.querySelector('.imageDisplay');
-  const uploadNode = document.querySelector('.uploadForm');
-  const downloadNode = document.querySelector('.downloadForm');
+const listNode = document.querySelector('.sidebar_list');
+const imageNode = document.querySelector('.imageDisplay');
+const uploadNode = document.querySelector('.uploadForm');
+const downloadNode = document.querySelector('.downloadForm');
 
-  new List(listNode);
-  new Image(imageNode);
-  new UploadForm(uploadNode);
-  new DownloadForm(downloadNode);
-})();
+const api = new Api();
+
+new List(listNode, api);
+new MainImage(imageNode, api);
+new UploadForm(uploadNode, api);
+new DownloadForm(downloadNode, api);

@@ -14,7 +14,8 @@ class Observer {
     const callbacks = this.callbacks[type];
     if (callbacks) {
       callbacks.forEach((cb) => cb(data));
-     }
     }
   }
-const observer = new Observer();
+}
+
+export const observer = new Observer();
